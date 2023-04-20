@@ -7,7 +7,7 @@ import coil.disk.DiskCache
 import coil.memory.MemoryCache
 import com.marvel.BuildConfig.IMAGE_DISK_CACHE_NAME
 import com.marvel.BuildConfig.IMAGE_DISK_CACHE_PERCENT
-import com.marvel.BuildConfig.IMAGE_MEMEORY_CACHE_PERCENT
+import com.marvel.BuildConfig.IMAGE_MEMORY_CACHE_PERCENT
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 
@@ -25,7 +25,7 @@ class App : Application(), ImageLoaderFactory {
         ImageLoader.Builder(this)
             .memoryCache {
                 MemoryCache.Builder(this)
-                    .maxSizePercent(IMAGE_MEMEORY_CACHE_PERCENT)
+                    .maxSizePercent(IMAGE_MEMORY_CACHE_PERCENT)
                     .build()
             }
             .diskCache {

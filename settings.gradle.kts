@@ -13,10 +13,10 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "Marvel"
-include ':app'
-include ':features:characters-home'
-include ':common'
-include ':core'
-include ':navigation'
-include ':features:character-details'
-include ':testing'
+include(":app")
+include(":features:characters-home")
+include(":common")
+include(":core")
+include(":navigation")
+include(":features:character-details")
+include(":testing")

@@ -100,7 +100,7 @@ fun CharacterCardPreview() {
         imageUrl = "",
         isBookmarked = true
     ), {
-    }, { id, isBookmark ->
+    }, { _, _ ->
     })
 }
 
